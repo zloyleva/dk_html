@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML tamplate</title>
+	
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet"  href="styles/normalize.css" type="text/css">
+	<link rel="stylesheet"  href="styles/style.css" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 search_product">
+					<form class="form">
+						<div class="form-group">
+							<label for="s_product">Поиск товара: </label><input id="s_product" class="form-control" type="text" placeholder="Введите название товара">
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-3 col-xs-12 address_data">
+					<div class="address_item" title="Наш адресс">
+						<span class="text_block">г. Запорожье</span>
+						<span class="text_block">ул. Деповская 72</span>
+					</div>
+					<div class="address_item" title="Контактные телефоны">
+						<a class="text_block" href="tel:0617699545"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (061)769-95-45</a>
+						<a class="text_block" href="tel:0676180545"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (067)618-05-45</a>
+					</div>
+					<div class="address_item" title="Нажмите кнопку чтобы завазать обратный звонок">
+						<button class="btn btn-default btn-sm">Заказать звонок <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12 logo_desc">
+					<div class="text-center" ><img src="images/logo.png" alt=""></div>
+					<p class="text-center"><strong>Самый крупный в Запорожье супермаркет-склад канцелярии, школьной продукции, детских игрушек и новогодних товаров</strong></p>
+				</div>
+				<div class="col-sm-3 col-xs-12 my_acc">
+					<a href=""><span class="glyphicon glyphicon-shopping-cart cursor_pointer" aria-hidden="true"></span> Корзина</a>
+					<a href=""><span class="glyphicon glyphicon-user cursor_pointer" aria-hidden="true"></span> Мой аккаунт</a>
+				</div>
+			</div>
+			<nav>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Магазин</a></li>
+			        <li><a href="#">О нас</a></li>
+			        <li><a href="#">Получить прайс</a></li>
+			        <li><a href="#">Доставка и оплата</a></li>
+			        <li><a href="#">Контакты</a></li>
+			      </ul>
+		      	</div>
+			</nav>
+		</div>
+	</header>
+	<!-- End header -->
+
+	<!-- Main content -->
+	<div class="container">
+		<div class="row delimiter">
+			<div class="col-sm-12">
+				<div class="firm_color_line"></div>
+			</div>
+		</div>
+		<div class="row breadcrumbs">
+			<div class="col-sm-12">
+				<a href="">Home</a> &raquo; <span class="active">Магазин</span>
+			</div>
+		</div>
+
+		<!-- Alert section -->
+
+		<div class="row alert_section">
+			<div class="panel panel_red">
+			  <div class="panel-heading">Важная информация <span class="close_button">&times;</span></div>
+			  <div class="panel-body">
+			    <p>Приглашаем к сотруднечеству ЧП, ООО, бухгалтерии организаций, бютжетные организации, художественные школы, центры пазвития и тд.</p>
+				<p>Для Вас у нас есть специальные предложения. Бонусные программы. </p>
+			  </div>
+			</div>
+		</div>
+
+		<!-- Products section -->
+
+		<div class="row products_section">
+			<div class="col-sm-4 col-xs-12 categories_section">
+				<div class="cat_header">
+					<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp;Категории товаров
+				</div>
+				<div class="cat_body_desctop">
+					<ul class="">
+						<li class="">
+							<a href="#" class="link-item dropdown-toggle"><span class="link_text">Офис <span class="cat_menu_badge">1 055</span></span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>							
+						</li>
+						<li class="selected_cat">
+							<a href="#" class="link-item dropdown-toggle"><span class="link_text">Школа <span class="cat_menu_badge">2 191</span></span><i class="fa fa-angle-right fa-rotate-90" aria-hidden="true"></i></a>
+							<ul class="cat_dropdown_menu nav cat-item active-item list-unstyled">
+								<li class="cat-item cat-item-19 current-cat"><a href="#" class="link-item">Бадминтон (4)</a></li>
+								<li class="cat-item cat-item-20"><a href="#" class="link-item"><span class="link_text">Боулинг <span class="cat_menu_badge">2</span></span><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="link-item dropdown-toggle">Новогодние товары (590)<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-8 col-md-6 col-xs-12 products_list">
+
+				<!-- Products LOOP Start -->
+
+				<div class="single_product">
+					<div class="product_thumbnail">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<img src="/images/72125.jpeg" alt="">
+						</a>
+					</div>
+					<div class="product_control">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<h2 class="woocommerce-loop-product__title">
+								Антистеплер Е40212 для скоб №10, 24/6, 26/6
+							</h2>
+							<span class="price"><span class="woocommerce-Price-amount amount">14.43&nbsp;<span class="woocommerce-Price-currencySymbol"> грн</span></span></span>
+						</a>
+						<div class="control_buttons">
+							<a href="" class="btn button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Добавить в корзину</a>
+							<a href="#" class="btn red_more">Подробнее</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="single_product">
+					<div class="product_thumbnail">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<img src="/images/63713.jpeg" alt="">
+						</a>
+					</div>
+					<div class="product_control">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<h2 class="woocommerce-loop-product__title">
+								Альбом для мал. 12аркА-4.скоба, економ TIKI (50214-TK) УК
+							</h2>
+							<span class="price"><span class="woocommerce-Price-amount amount">5.94&nbsp;<span class="woocommerce-Price-currencySymbol"> грн</span></span></span>
+						</a>
+						<div class="control_buttons">
+							<a href="" class="btn button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Добавить в корзину</a>
+							<a href="#" class="btn red_more">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="single_product">
+					<div class="product_thumbnail">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<img src="/images/72125.jpeg" alt="">
+						</a>
+					</div>
+					<div class="product_control">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<h2 class="woocommerce-loop-product__title">
+								Антистеплер Е40212 для скоб №10, 24/6, 26/6
+							</h2>
+							<span class="price"><span class="woocommerce-Price-amount amount">14.43&nbsp;<span class="woocommerce-Price-currencySymbol"> грн</span></span></span>
+						</a>
+						<div class="control_buttons">
+							<a href="" class="btn button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Добавить в корзину</a>
+							<a href="#" class="btn red_more">Подробнее</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="single_product">
+					<div class="product_thumbnail">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<img src="/images/63713.jpeg" alt="">
+						</a>
+					</div>
+					<div class="product_control">
+						<a href="#" class="woocommerce-LoopProduct-link">
+							<h2 class="woocommerce-loop-product__title">
+								Альбом для мал. 12аркА-4.скоба, економ TIKI (50214-TK) УК
+							</h2>
+							<span class="price"><span class="woocommerce-Price-amount amount">5.94&nbsp;<span class="woocommerce-Price-currencySymbol"> грн</span></span></span>
+						</a>
+						<div class="control_buttons">
+							<a href="" class="btn button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Добавить в корзину</a>
+							<a href="#" class="btn red_more">Подробнее</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Products LOOP End -->
+
+			</div>
+
+			<div class="sidebar_info col-md-2">
+				SideBar
+			</div>
+		</div>
+		<div class="row cta_get_consutation">
+			<div class="col-sm-12 cta_form">
+				<h3><strong>Оставить заявку на консультацию</strong></h3>
+				<form action="" class="form-inline">
+					<input class="form-control" name="your_name" type="text" placeholder="Введите свое имя">
+					<input class="form-control" name="your_phone" type="phone" placeholder="Введите свой телефон">
+					<button class="btn " type="submit"><i class="fa fa-info-circle" aria-hidden="true"></i> Получить консультацию</button>
+				</form>
+			</div>
+		</div>
+		<div class="row delimiter">
+			<div class="col-sm-12">
+				<div class="firm_color_line"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12 footer_logo">
+				<div class="text-center" ><img src="images/logo.png" alt=""></div>
+				<h5 class="text-center"><strong>ООО Дом Канцелярии</strong></h5>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<p>Приглашаем к сотруднечеству ЧП, ООО, бухгалтерии организаций, бютжетные организации, художественные школы, центры пазвития и тд.</p>
+				<p>Для Вас у нас есть специальные предложения. Бонусные программы.</p>
+				<p>Телефон для контактов: (061)769-95-45, (067)618-05-45</p>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				
+				<h5>Отдел продаж:</h5>
+				<span class="text_block">г. Запорожье</span>
+				<span class="text_block">ул. Деповская 72</span>
+				<a class="text_block" href="tel:0617699545"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (061)769-95-45</a>
+				<a class="text_block" href="tel:0676180545"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (067)618-05-45</a>
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS scripts -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
